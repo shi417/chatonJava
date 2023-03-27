@@ -16,7 +16,7 @@ public class TranslateServiceImpl implements ITranslateService{
     @Override
     @TransLog
     public String doTranslate(Question question) {
-        String text  = String.format("请将 %1$s 翻译成 %2$s",question.getContent(),question.getLanguage());
+        String text  = String.format("请把我这句话翻译成%1$s:\"%2$s\"",question.getLanguage(),question.getContent());
         String answer = chatGPTClient.ask(text);
         log.info("chatGPT返回结果:{}",answer);
         return answer;

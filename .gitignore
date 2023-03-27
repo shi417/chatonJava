@@ -1,0 +1,3 @@
+# Project exclude paths
+/chatgpt-common/target/
+/chatgpt-web/target/

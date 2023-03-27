@@ -18,7 +18,7 @@ public class TransLogAspect {
     @Before("loggable()")
     public void beforeAdvice() {
         HttpServletRequest request = RequestHolder.get();
-        StringBuffer requestURL = request.getRequestURL();
-        log.info("客户端进行翻译查询:{}",requestURL.toString());
+        String remoteHost = request.getRemoteHost();
+        log.info("客户端进行翻译查询:{}",remoteHost);
     }
 }
