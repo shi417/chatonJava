@@ -12,7 +12,7 @@ public class TranslateController extends Controller {
 
     @Autowired
     private ITranslateService translateService;
-    @RequestMapping("/translate")
+    @RequestMapping(value ="/translate",produces = "application/json;charset=utf-8")
     public String translate(@RequestBody Question question){
         return  translateService.doTranslate(question);
     }

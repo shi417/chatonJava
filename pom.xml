@@ -11,7 +11,7 @@
     <modules>
         <module>chatgpt-common</module>
         <module>chatgpt-util</module>
-        <module>chatgpt-web</module>
+        <module>chatgpt-trans</module>
         <module>chatgpt-admin</module>
     </modules>
 
@@ -60,6 +60,11 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>1.9.9</version>
+        </dependency>
 
     </dependencies>
 </project>

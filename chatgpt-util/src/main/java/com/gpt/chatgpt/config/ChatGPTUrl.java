@@ -14,8 +14,8 @@ import lombok.Getter;
 public enum ChatGPTUrl {
 
     COMPLETIONS("https://api.openai.com/v1/completions"),
-    ;
 
+    COMPLETIONS_CHAT("https://api.openai.com/v1/chat/completions");
     private String url;
 
 }

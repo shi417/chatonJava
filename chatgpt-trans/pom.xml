@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>chatgpt-web</artifactId>
+    <artifactId>chatgpt-trans</artifactId>
 
     <properties>
         <java.version>1.8</java.version>
